@@ -1,0 +1,76 @@
+/******************
+ * Gallery
+******************/
+
+
+/* Position the slideshow container */
+.container_gallery {
+  position: relative;
+}
+
+/* Render slides invisible when page loads */
+.slideImage {
+  display: none;
+}
+
+/* Set slide image width to 100% of parent container (i.e. screen width) */
+.slideImage img{
+  width: 100%;
+}
+
+
+/* Navigation arrows - appearance, colour and position */
+.backwards,
+.forwards {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Place "next arrow" on right hand side of screen */
+.forwards {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Add background to navigation arrows on hover */
+.backwards:hover,
+.forwards:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Slide labels - appearance, colour and position */
+.slideLabel {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* 4 column layout for thumbnail section */
+.column_gallery {
+  float: left;
+  width: 25%;
+}
+
+/* Transparency on thumnbails when page loads*/
+.thumbnail {
+  opacity: 0.6;
+  width: 100%;
+}
+
+/* Remove thumbnail transparency on hover*/
+.active,
+.thumbnail:hover {
+  opacity: 1;
+}
